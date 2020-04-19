@@ -1,0 +1,82 @@
+.banner{
+    margin : 0;
+    padding : 0;
+}
+/*.banner{
+    background : url("./../static/bg2.jpg") no-repeat center;
+    background-size:cover;
+    height: 100vh;
+    
+}*/
+header{
+    padding :5px,30px,0px;
+    background-color : rgba(225,225,225,0.6);
+   }
+.hat{
+      
+      display : inline-block;
+      float:none;
+       
+ }
+ .title-color{
+      text-transform : uppercase;
+      color :     #464c50 
+/*  #41434b  /* #5875d8 ;/* #ff4181;*/
+     }
+     .shift{
+         margin-left: 10px;
+     }
+.search_my{
+     float : right;
+     border : 3px  solid #464c50;
+        }
+       
+.search1{
+    border : none;
+    background-color : none;
+    width : 150px;
+    background-color : transparent;
+}
+.button1{
+   color : #fff;
+   background-color : #464c50;
+   border : none;
+   height: 40px;
+   width : 40px;
+}
+.nav1{
+    background-color : #f8f9fa;
+    font-weight:500;
+    
+}
+.navbar{
+    padding : 0px;
+}
+.navbar-nav li{
+    z-index: 1;
+}
+.navbar-nav li a{
+    font-size: 17px;
+    padding : 15px 60px !important;
+}
+.navbar-nav li a:hover{
+    border-right : 3px solid #464c50;
+    border-left : 3px solid #464c50;
+    font-weight: 750;
+    transition : 0.5s all;
+}
+.navbar-light .navbar-nav .nav-link{
+    color : #464c50;
+}
+.newUser{
+  margin: 20em 20em 70em 10em;
+  height: 100px;
+  width:50px;
+  background-color:grey;
+}
+@media(max-width:1200px){
+    .navbar-nav li{
+        font-size : 15px;
+        
+    }
+}

@@ -1,0 +1,46 @@
+
+    <div class="signup">
+        <p class="hide">jfkfk</p>
+     
+        <form [formGroup]="loginForm" method="post" (ngSubmit)="login()">
+            
+            <table  class="form1">
+                    <tr>
+                        <td class="data1 title" colspan="2" align="center"> <div class="project">Login</div>
+                            </td></tr>
+             <tr><td><p *ngIf="message" class="text-center error color1 h6" >{{message}}</p></td></tr>
+                    <tr>
+                   <td class="data1"> UserName</td></tr><tr>
+                  <td class="data1">  <input type="text" id="username"  formControlName="username" placeholder="username"></td>
+                </tr>
+                <tr>
+                    <td>
+                            <div *ngIf="submitted && f.userid.errors" class="help-block">
+                                    <div *ngIf="f.userid.errors.required">Userid is required</div>
+                              </div>
+                    </td>
+                </tr>
+                <tr><td class="data1">
+                    Password</td></tr>
+                <tr><td class="data1"><input type="password" id="password" formControlName="password" placeholder=" password" /></td>
+               
+                </tr>
+                <tr>
+                       <td> <div *ngIf="submitted && f.password.errors" class="help-block">
+                                <div *ngIf="f.password.errors.required">Password is required</div>
+                        </div></td>
+                </tr>
+                <tr>
+                    <td class="data1"> <button class="btn btn-dark col-sm-5" type="submit" (click)='login()'>login</button></td></tr>
+            <tr><td class="data1"><a routerLink="/register" class="nav-link"><p style="color:#464c50;">
+           Don't have an account? </p></a>
+         
+            </td></tr>
+           
+            </table>
+            
+        
+        </form>
+   <p class='hide'>kffk</p>
+   </div>
+

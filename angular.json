@@ -27,10 +27,12 @@
               "src/favicon.ico",
               "src/assets"
             ],
+              "scripts": ["node_modules/jquery/dist/jquery.min.js"],
+              
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+          
           },
           "configurations": {
             "production": {

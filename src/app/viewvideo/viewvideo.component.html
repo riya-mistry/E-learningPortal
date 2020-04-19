@@ -1,0 +1,51 @@
+<app-navigation></app-navigation>          
+       
+              <br>
+              <div class="col-sm-12">
+                  <div class="progress">
+        <div class="progress-bar bg-dark" style="width:30%">30%</div>
+      </div>
+                  <br>
+              </div>
+
+
+ 
+              <div class="container-fluid row mx-auto bg-light">
+                <div class="col-sm-2 sidenav " id="mySidenav">
+                 
+      <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+      <div *ngFor="let f of files" (click)="changeVideo(f.fileurl) ;changeDes(f.description)">{{f.filename}}</div>
+    </div>
+    <span style="font-size:30px;cursor:pointer ;" (click)="openNav()" id="menu">&#9776; </span>
+
+    
+<div class="col-sm-11  video">
+    <br>
+   <div class="embed-responsive embed-responsive-21by9">
+<iframe  
+ align="middle">
+</iframe> 
+</div>
+    </div>
+    <br>
+     <div class="col-sm-3 sidenav2 " id="mySidenav2">
+     
+<a href="javascript:void(0)" class="closebtn2" (click)="closeNotes()">&times;</a>
+
+<div class="h6 description"></div>
+
+
+
+
+</div>
+
+
+<span style="font-size:30px;cursor:pointer ;margin-left: 30px" (click)="openNotes()" id="notes">&#9776; </span>
+</div>
+
+  
+<hr>
+
+
+
+

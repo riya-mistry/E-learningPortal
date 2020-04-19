@@ -1,0 +1,29 @@
+<app-navigation></app-navigation>
+<br>
+<br>
+<table class="table  table-bordered">
+    <thead class="bg-light h6" align="center">
+    <tr>
+        <td>Sr. No.</td>
+        <td> Name</td>
+        <td>email</td>
+        <td>degree</td>
+        <td>school</td>
+        <td colspan="2">Actions</td>
+    </tr>
+    </thead>
+  
+    <tbody align="center">
+   
+       
+        <tr *ngFor="let aduser of adusers; let i =index">
+            <td>{{i+1}}</td>
+            <td>{{ aduser.name}}</td>
+           <td>{{aduser.email}}</td>
+            <td>{{ aduser.degree }}</td>
+            <td>{{aduser.school}}</td>
+            <td><a [routerLink]="['/edit', aduser._id]" class="btn btn-primary">Edit</a></td>
+            <td><button (click)="deleteAdUser(aduser._id)"  class="btn btn-danger">Delete</button></td>
+        </tr>
+    </tbody>
+  </table>

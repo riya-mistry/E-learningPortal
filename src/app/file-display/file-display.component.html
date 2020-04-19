@@ -1,0 +1,14 @@
+<br>
+<br>
+<div *ngFor= "let f of files">
+    <table class="table ">
+        <tr class="h6">
+            {{f.fileno}}. {{f.filename}}
+        </tr>
+        <br>
+        <tr class="bg-light">
+                <div style="margin-left:15px"> {{f.description}}</div> 
+        </tr>
+    </table>
+
+</div>

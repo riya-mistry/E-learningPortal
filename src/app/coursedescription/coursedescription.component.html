@@ -1,0 +1,61 @@
+<app-navigation>
+</app-navigation>
+<br><br>
+{{author}}
+<div *ngFor="let x of c" class="container"  >
+    <table>
+
+            <tr>
+                    <div class="h2" >{{x.name}}</div>
+                    <br><br>
+                </tr>
+  <tr>  <div class="border border-secondary">
+
+        <img src="{{x.image}}" class=" mx-auto d-block" >
+    </div>
+    <br><br>
+</tr>
+<tr>
+        <div class="h6">Category :</div>
+        <div class=" bg-light">{{x.category}}</div>
+        <br><br>
+    </tr>
+
+<tr>
+        <div class="h6">About :</div>
+        <div class=" bg-light">{{x.description}}</div>
+        <br><br>
+    </tr>
+    <tr>
+            <div class="h6">Cost :</div>
+            <div class=" bg-light">${{x.cost}}</div>
+            <br><br>
+        </tr>
+
+        <tr>
+                <div class="h6">Author :</div>
+               
+                <div class=" bg-light" >{{x.author}}</div>
+                <br><br>
+            </tr>
+</table>
+<div *ngFor = "let m of modules">
+<table class="table table-hover">
+    <div class="jumbotron">
+<tr class="h4  border ">
+
+       {{m.moduleno}} .    {{m.modulename}}
+      
+</tr>
+<br>
+      <br>
+<tr>
+      <div style="margin-left:15px"> {{m.description}}</div> 
+</tr>
+<app-file-display name="{{m.modulename}}"></app-file-display>
+</div>
+
+</table>
+</div>
+<a routerLink = "/course/{{x.name}}"><button class="btn btn-secondary float-right "><h5>Start </h5></button></a>
+</div>

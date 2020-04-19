@@ -1,0 +1,32 @@
+<app-navigation></app-navigation>
+<br>
+<br>
+<table class="table  table-bordered">
+    <thead class="bg-light h6" align="center">
+    <tr>
+        <td>Sr. No.</td>
+        <td> Name</td>
+        <td>email</td>
+        <td>profession</td>
+        <td>experience</td>
+        <td>contact</td>
+        <td colspan="2">Actions</td>
+    </tr>
+    </thead>
+  
+    <tbody align="center">
+   
+       
+        <tr *ngFor="let aduser of adusers; let i =index">
+            <td>{{i+1}}</td>
+            <td>{{ aduser.name}}</td>
+           <td>{{aduser.email}}</td>
+            <td>{{ aduser.profession }}</td>
+            <td>{{aduser.experience}}</td>
+            <td>{{aduser.contact}}</td>
+            <!--td><a href"{{aduser.linkedin}}">{{aduser.linkedin}}</a></td-->
+            <!--td><a [routerLink]="['/edit', aduser._id]" class="btn btn-primary">Edit</a></td-->
+            <td><button (click)="deleteAdUser(aduser._id)"  class="btn btn-danger">Delete</button></td>
+        </tr>
+    </tbody>
+  </table>

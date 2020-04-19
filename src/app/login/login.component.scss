@@ -1,0 +1,129 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 25, 2019, 9:28:06 AM
+    Author     : user1
+*/
+.project{
+    color : #464c50; 
+    /*  #1995e6;*/
+    font : bold 2em monospace ; 
+    display: inline-block;
+}
+
+.signup{
+    background: black url("./../static/bg2.jpg") no-repeat left bottom;
+    background-size: cover;
+    background-attachment: scroll;
+  background-blend-mode: screen;  
+   
+  height:100vh;
+}
+.img{
+    height: 37.5em;
+    width : 83.8125em;
+}
+.hide{
+  visibility: hidden;
+}
+
+input[type=submit] ,input[type=reset]{
+  background: #0066A2;
+color: white;
+border-style: outset;
+border-color: #0066A2;
+height: 60px;
+width: 100px;
+font: bold 25px "Times New Roman";
+text-shadow:none;
+}
+input[type=button]{
+    background: #1995e6;
+    color: white;
+border-style: outset;
+border-color: #1995e6;
+height: 25px;
+width: 70px;
+font: bold 15px arial, sans-serif;
+text-shadow:none;
+    border-radius: 7px;
+    
+}
+
+.form1{
+                align-content:center;
+                width : 20em;
+                height : 360px;
+                margin-top :10em;
+                margin-left: 30em ;
+                margin-right: 30em ;
+                background-color: white;
+                border-radius: 25px;
+                opacity: 0.9;
+                font-family: Times,serif;
+                font-size: 1em;
+                
+      
+}
+
+             
+ td.data1{
+     color:#464c50;
+    text-align: center;
+    padding : 3px;
+    letter-spacing: 2px;
+    text-shadow:1px 0px #464c50;
+    font-size:1.35em;
+    }
+td.data1{
+        opacity: 1;
+        color:#464c50;
+        }
+.title{
+           text-shadow: 1.5px 0px #464c50; 
+        }
+.color1{
+    color:#464c50;
+}
+input[type=text], input[type=password], input[type=submit], input[type=email],input[type=tel],input[type=reset]{
+            border-radius: 6px;
+            height: 25px;
+            text-align: center;
+            font-family: "Times New Roman";
+            font-size:0.9em;
+                        
+ }
+input:focus{
+            border-color: buttonshadow;
+
+}
+
+.search{
+    width:300px;
+    height:25px;
+    margin-left:80px;
+}
+a.login{
+ margin-left:500px;
+
+}
+
+a:unvisited{
+  color: #464c50;
+}
+a.nb:hover, a.nb:active {
+  background-color: green;
+}  
+footer{
+    text-align: center;
+}
+
+.profession-login{
+    
+    table{
+        width : 1000px;
+    }
+}

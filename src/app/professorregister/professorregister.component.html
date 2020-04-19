@@ -1,0 +1,92 @@
+<app-navigation></app-navigation>
+<br>
+<div class=" col-sm-8 mx-auto  ">
+    <form [formGroup]="adProfessorUser" class="form-horizontal bg-light" (ngSubmit)="submit()">
+      <label class="col-sm-10 h2 title-color">{{title}}</label>
+<div class="form-group form-group-lg">
+<label class="col-sm-2 control-label title-color h6" for="name">Name</label>
+<div class="col-sm-6">
+  <input class="form-control" type="text" name="name" formControlName="name" #name required>
+   
+</div>
+</div>
+<div class="form-group form-group-lg">
+  <label class="col-sm-2 control-label title-color h6" for="username">UserName</label>
+  <div class="col-sm-6">
+    <input class="form-control" type="text" name="username" formControlName="username" #username required>
+     
+  </div>
+  </div>
+
+<div class="form-group form-group-lg">
+  <label class="col-sm-2 control-label title-color h6" for="profession">Profession</label>
+  <div class="col-sm-6">
+    <input class="form-control" type="text" name="profession" formControlName="profession" #profession required>
+     
+  </div>
+  </div>
+<div class="form-group form-group-lg">
+<label class="col-sm-3 control-label title-color h6" for="expertise">Expertise </label>
+<div class="col-sm-6">
+  <input class="form-control" type="text" name="expertise" formControlName="expertise"  #expertise required>
+</div>
+
+</div>
+<div class="form-group form-group-lg">
+<label class="col-sm-3 control-label title-color h6" for="email">Email</label>
+<div class="col-sm-6">
+  <input class="form-control" type="email" name="email" formControlName="email" #email required>
+</div>
+</div>
+<div class="form-group form-group-sm">
+<label class="col-sm-3 control-label title-color h6" for="contact">Contact </label>
+<div class="col-sm-6">
+  <input class="form-control" type="tel" name="contact" formControlName="contact"  #contact required>
+</div>
+</div>
+<div class="form-group form-group-sm">
+<label class="col-sm-3 control-label title-color h6" for="pass">Password</label>
+<div class="col-sm-6">
+  <input class="form-control" type="password" name="password" formControlName="password" #password required>
+</div>
+</div>
+
+<div class="form-group form-group-sm">
+<label class="col-sm-3 control-label title-color h6" for="confirmpass">Confirm Password</label>
+<div class="col-sm-6">
+  <input class="form-control" type="password" name="confirmpass" formControlName="confirmpass" #confirmpass required pattern="{{password.value}}">
+</div>
+</div>
+
+
+
+<div class="form-group form-group-sm">
+<label class="col-sm-3 control-label title-color h6" for="experience">Experience</label>
+<div class="col-sm-9">
+  <input class="form-control" type="text" name="experience" formControlName="experience" #experience required>
+</div>
+</div>
+<div class="form-group form-group-sm">
+  <label class="col-sm-3 control-label title-color h6" for="accountnumber">AccountNumber</label>
+  <div class="col-sm-9">
+    <input class="form-control" type="number" name="account" formControlName="account" #account required>
+  </div>
+  </div>
+  <div class="form-group form-group-sm">
+    <label class="col-sm-3 control-label title-color h6" for="linkedin">linkedin Profile</label>
+    <div class="col-sm-9">
+      <input class="form-control" type="text" name="linkedin" formControlName="linkedin" #linkedin required 
+      ng-pattern="/^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/">
+    </div>
+    </div>
+
+<div class="col-sm-3 form-group">
+
+        <button  type="submit" (click)="addAdProfessorUser(name.value,username.value,profession.value,expertise.value,email.value,
+              contact.value, password.value,experience.value,account.value,linkedin.value)"
+              [disabled]="adProfessorUser.pristine || adProfessorUser.invalid" class="btn text-white" style="background-color: #464c50">
+              Submit
+        </button>
+</div>
+</form>
+</div>-->

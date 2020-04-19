@@ -1,0 +1,49 @@
+<app-navigation></app-navigation>
+
+<table class="table ">
+    <thead>
+    <tr>
+   
+    </tr>
+    </thead>
+  
+    <tbody >
+       
+        
+        <div *ngFor="let adcourse of adcourses ">
+            <tr class="course">
+          <td rowspan="5"><a routerLink="/course/{{adcourse.name}}"><img src="{{adcourse.image}}" height=150 width=250 class="image"></a></td>
+          <td></td><td></td>
+         <td class="col-sm-5"> <tr class="col-sm-5">
+          <td > Name:  {{adcourse.name}}
+            </td>
+            <td></td>
+          </tr>
+          
+             <tr class="col-sm-5">
+                    <td> Category:  {{adcourse.category}}
+                        </td>
+                        <td></td>
+         
+         </tr><tr class="col-sm-5">
+                <td> cost:  $ {{adcourse.cost}}
+                    </td>
+                    <td>
+
+                      
+                    </td>
+         </tr>
+         <tr class="col-sm-5"><td><a routerLink="/course/{{adcourse.name}}"><button class="btn btn-success">Buy Now</button></a></td>
+         <td><a routerLink="/details/{{adcourse.name}}"> <button class="btn btn-primary">View Details</button></a></td>
+        </tr>
+        </td>
+
+       
+         </tr>
+          
+          
+          
+          
+        </div>
+    </tbody>
+  </table>
